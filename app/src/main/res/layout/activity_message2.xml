@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context="com.example.kim.finalprojectowner1.chat.MessageActivity">
+    <!--두번째 엄마 1-->
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/toolbarColor"
+            android:onClick="chatting"
+            android:text="채팅/영상통화"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp" /><!-- 채팅-->
+        <Button
+            android:id="@+id/btn_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/toolbarColor"
+            android:text="지도"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp" /><!--지도-->
+    </LinearLayout>
+
+    <!--두번째 엄마 2-->
+    <LinearLayout
+        android:id="@+id/messageActivity_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.remotemonster.sdk.PercentFrameLayout
+                    android:id="@+id/perFrameLocal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.remotemonster.sdk.core.SurfaceViewRenderer
+                        android:id="@+id/surfRendererLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.remotemonster.sdk.PercentFrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.remotemonster.sdk.PercentFrameLayout
+                    android:id="@+id/perFrameRemote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.remotemonster.sdk.core.SurfaceViewRenderer
+                        android:id="@+id/surfRendererRemote"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.remotemonster.sdk.PercentFrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5"
+
+            >
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageActivity_reclclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ddd1d1"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                android:background="#ddd1d1"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+
+                >
+
+                <EditText
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/messageActivity_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#ffff"
+                    android:hint="메세지를 입력해주세요"
+                    />
+                <Button
+                    android:id="@+id/messageActivity_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="전송"
+                    android:background="#ffb752"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_weight="4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!--  <com.remotemonster.sdk.PercentFrameLayout
+                         android:id="@+id/perFrameLocal"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1">
+                         <com.remotemonster.sdk.core.SurfaceViewRenderer
+                             android:id="@+id/surfRendererLocal"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent" />
+                     </com.remotemonster.sdk.PercentFrameLayout>
+
+
+                         <com.remotemonster.sdk.PercentFrameLayout
+                             android:id="@+id/perFrameRemote"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             >
+                             <com.remotemonster.sdk.core.SurfaceViewRenderer
+                                 android:id="@+id/surfRendererRemote"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.remotemonster.sdk.PercentFrameLayout>-->
+
+    <!--  <android.support.v7.widget.RecyclerView
+          android:id="@+id/messageActivity_reclclerview"
+          android:layout_width="280dp"
+          android:layout_height="265dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+
+          android:layout_marginLeft="312dp"
+          android:layout_marginStart="312dp"
+          android:layout_weight="0.5" />
+
+      <Button
+          android:id="@+id/messageActivity_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentRight="true"
+          android:text="전송" />
+
+      <EditText
+          android:id="@+id/messageActivity_editText"
+          android:layout_width="280dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true" />--><!-- </LinearLayout>
+
+
+
+</LinearLayout>-->

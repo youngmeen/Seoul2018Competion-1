@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "1054241375562",
+    "firebase_url": "https://demover2-2add2.firebaseio.com",
+    "project_id": "demover2-2add2",
+    "storage_bucket": "demover2-2add2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054241375562:android:0df8bb6a7cfc1e33",
+        "android_client_info": {
+          "package_name": "com.example.kim.demover2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054241375562-vd4ckh8s9alh1516oamga0p4f668rthl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kim.demover2",
+            "certificate_hash": "b903db9e3cf980585c2f695a560f15ab6c3274bc"
+          }
+        },
+        {
+          "client_id": "1054241375562-h2ibm40jgv0ajrfs0csel9a3pnfss0tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-CtzNA3yW3lUc0Jek5OyFfNEIU4pGbNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054241375562-h2ibm40jgv0ajrfs0csel9a3pnfss0tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054241375562:android:054f706e27401211",
+        "android_client_info": {
+          "package_name": "com.example.kim.finalprojectowner1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054241375562-h2ibm40jgv0ajrfs0csel9a3pnfss0tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-CtzNA3yW3lUc0Jek5OyFfNEIU4pGbNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054241375562:android:72d729296d0575b9",
+        "android_client_info": {
+          "package_name": "com.example.kim.howtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054241375562-q8i0771u3jsu74t8junhj9h3bnfa3rl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kim.howtalk",
+            "certificate_hash": "6af142804744d8e1dbe36085de3ff9c279790db4"
+          }
+        },
+        {
+          "client_id": "1054241375562-h2ibm40jgv0ajrfs0csel9a3pnfss0tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-CtzNA3yW3lUc0Jek5OyFfNEIU4pGbNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054241375562-h2ibm40jgv0ajrfs0csel9a3pnfss0tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
